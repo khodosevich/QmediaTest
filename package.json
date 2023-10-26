@@ -7,11 +7,20 @@
     "start": "webpack serve",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khodosevich/QmediaTest.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/preset-react": "^7.22.15",
-    "html-webpack-plugin": "^5.5.3",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.14",
+    "axios": "^1.5.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-loader": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0"
@@ -27,5 +36,9 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/khodosevich/QmediaTest/issues"
+  },
+  "homepage": "https://github.com/khodosevich/QmediaTest#readme"
 }

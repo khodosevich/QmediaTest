@@ -1,12 +1,11 @@
 import React from 'react';
-import QuizComponent from "./components/QuizComponent";
-
+import QuizComponent from "./component/QuizComponent";
 
 const Main = () => {
     return (
         <div>
-            Qmedia
-            <QuizComponent/>
+            Hello
+          <QuizComponent/>
         </div>
     );
 };

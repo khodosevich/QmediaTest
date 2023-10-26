@@ -8,6 +8,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
+
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
@@ -26,9 +31,7 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
+
         ],
-    },
-    resolve: {
-        extensions: ['.js', '.jsx']
     }
 }
