@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    gap: 12px;
+    margin-top: 62px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .pagination{
+        justify-content: center;
+    }
+}
+
+.pagination_item {
+    cursor: pointer;
+    color: #B8B8B8;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.active {
+    cursor: pointer;
+    color: #00A5FF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
