@@ -103,7 +103,7 @@
     font-weight: 700;
     line-height: normal;
 
-    width: 370px;
+    max-width: 370px;
 
     margin-bottom: 32px;
 
@@ -162,9 +162,6 @@
     align-items: center;
 
     cursor: pointer;
-
-    width: 91px;
-    height: 31px;
 }
 
 .btn_container_prev_quiz {
@@ -187,9 +184,6 @@
     align-items: center;
 
     cursor: pointer;
-
-    height: 31px;
-
 }
 
 .btn_container_quiz {
@@ -211,5 +205,14 @@
     .quiz_content {
         margin:10px;
     }
+}
 
+@media (max-width: 700px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
 }

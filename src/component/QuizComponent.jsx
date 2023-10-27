@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import classes from '../style/quiz.module.css';
 import {useNavigate} from "react-router-dom";
 
@@ -62,26 +62,21 @@ const QuizComponent = () => {
             <p className={classes.description}>
                 Пройдите короткий тест и получите список наиболее подходящих для вас косметических продуктов
             </p>
-
             <div className={classes.quiz_container}>
-
                 <div>
                     <div className={classes.pagination_group}>
                         <span className={currentQuestionIndex === 0 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
                         <span className={currentQuestionIndex === 1 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
                         <span className={currentQuestionIndex === 2 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
                     </div>
-
                     <div className={classes.quiz_question}>
                         {`Вопрос ${currentQuestionIndex+1} из 3`}
                     </div>
                 </div>
-
                 <div className={classes.question_container}>
                     <div className={classes.quiz_container_title}>
                         <p>{currentQuestion.question}</p>
                     </div>
-
                     <div className={classes.quizes_radios}>
                         {currentQuestion.options.map((option, index) => (
                             <div key={index} className={classes.quizes_radios_item}>
@@ -100,7 +95,6 @@ const QuizComponent = () => {
                         ))}
                     </div>
                 </div>
-
                 <div className={classes.btns_quiz}>
                     {
                         currentQuestionIndex > 0 && <div className={classes.btn_container_prev}>

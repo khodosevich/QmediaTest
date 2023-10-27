@@ -1,14 +1,13 @@
 import React from 'react';
-import image1 from "./images/product-4.jpeg"
 
 import classes from "../style/productItem.module.css"
-import heart from "./images/Frame.svg"
+import heart from "../../public/images/Frame.svg"
 
 const ProductItem = ({props}) => {
     return (
         <div className={classes.product_container}>
             <div className={classes.imageContainer}>
-                <img className={classes.image} src={image1} alt="" />
+                <img className={classes.image} src={props.image} alt="" />
                 <img className={classes.heartIcon} src={heart} alt=""/>
             </div>
             <div>
