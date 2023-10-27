@@ -102,24 +102,21 @@ const QuizComponent = () => {
                 </div>
                 <div className={classes.btns_quiz}>
                     {
-                        currentQuestionIndex > 0 && <div className={classes.btn_container_prev}>
-                            <button className={classes.btn_container_prev_quiz} onClick={handlePrevButtonClick}>
+                        currentQuestionIndex > 0 && <button className={classes.btn_container_prev_quiz} onClick={handlePrevButtonClick}>
                                 Назад
                             </button>
-                        </div>
                     }
-                    <div className={classes.btn_container}>
-                        {
-                            currentQuestionIndex === 2 ?
-                                    <button className={classes.btn_container_quiz} onClick={handleNextButtonClick}>
-                                        Узнать результат
-                                    </button>
-                             :
-                                <button className={classes.btn_container_quiz} onClick={handleNextButtonClick}>
-                                    Дальше
-                                </button>
-                        }
-                    </div>
+
+                    {
+                        currentQuestionIndex === 2 ?
+                            <button className={classes.btn_container_quiz} onClick={handleNextButtonClick}>
+                                Узнать результат
+                            </button>
+                            :
+                            <button className={classes.btn_container_quiz} onClick={handleNextButtonClick}>
+                                Дальше
+                            </button>
+                    }
                 </div>
             </div>
         </div>

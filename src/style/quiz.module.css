@@ -63,6 +63,8 @@
 
 .pagination_group_item {
 
+    cursor: pointer;
+
     width: 20px;
     height: 20px;
     border-radius: 50% ;
@@ -133,6 +135,8 @@
 
     border-radius: 50%;
 
+    cursor: pointer;
+
 }
 
 .quiz_radio_text {
@@ -152,7 +156,9 @@
 
 }
 
-.btn_container_prev {
+
+.btn_container_prev_quiz {
+
     border-radius: 5px;
     background: #fff;
 
@@ -161,10 +167,6 @@
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
-}
-
-.btn_container_prev_quiz {
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -174,10 +176,10 @@
     line-height: normal;
 
     cursor: pointer;
-
 }
 
-.btn_container {
+.btn_container_quiz {
+
     border-radius: 5px;
     background: #00A5FF;
 
@@ -185,11 +187,6 @@
     padding: 10px 15px;
     justify-content: center;
     align-items: center;
-
-    cursor: pointer;
-}
-
-.btn_container_quiz {
 
     color: #FFF;
     text-align: center;
@@ -225,5 +222,4 @@
     .btn_container_quiz , .btn_container_prev_quiz {
         font-size: 13px;
     }
-
 }

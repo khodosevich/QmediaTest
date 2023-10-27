@@ -1,12 +1,13 @@
 .product_container {
-    /*max-height: 320px;*/
     max-width: 240px;
 
     cursor: pointer;
+
+    transition: all 0.5s;
 }
 
 .product_container:hover {
-    transition: all 0.5s;
+
     transform: scale(1.05);
 }
 
@@ -30,7 +31,6 @@
     line-height: 130%;
 
     margin: 22px 0 15px 0;
-
 }
 
 .image {
@@ -55,7 +55,7 @@
     right: 10px;
     width: 30px;
     height: 30px;
-    background-size: cover;
+    background-size: contain;
     cursor: pointer;
 }
 
