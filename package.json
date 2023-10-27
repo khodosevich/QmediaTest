@@ -1,9 +1,12 @@
 {
+  "homepage": "https://khodosevich.github.io/QmediaTest",
   "name": "qmedia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve",
     "build": "webpack"
   },
@@ -21,6 +24,7 @@
     "axios": "^1.5.1",
     "clean-webpack-plugin": "^4.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -40,6 +44,5 @@
   },
   "bugs": {
     "url": "https://github.com/khodosevich/QmediaTest/issues"
-  },
-  "homepage": "https://github.com/khodosevich/QmediaTest#readme"
+  }
 }
