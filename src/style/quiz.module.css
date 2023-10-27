@@ -219,3 +219,11 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 370px) {
+
+    .btn_container_quiz , .btn_container_prev_quiz {
+        font-size: 13px;
+    }
+
+}

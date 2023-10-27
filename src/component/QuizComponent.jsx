@@ -65,9 +65,14 @@ const QuizComponent = () => {
             <div className={classes.quiz_container}>
                 <div>
                     <div className={classes.pagination_group}>
-                        <span className={currentQuestionIndex === 0 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
-                        <span className={currentQuestionIndex === 1 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
-                        <span className={currentQuestionIndex === 2 ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}></span>
+                        {
+                            questionsWithOptions.map(
+                                (quest, index) =>
+                                    <span key={index}
+                                        onClick={() => setCurrentQuestionIndex(index)}
+                                        className={currentQuestionIndex === index ? `${classes.pagination_group_item} ${classes.active}` : classes.pagination_group_item}>
+                                    </span>)
+                        }
                     </div>
                     <div className={classes.quiz_question}>
                         {`Вопрос ${currentQuestionIndex+1} из 3`}
